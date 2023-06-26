@@ -41,7 +41,7 @@ post {
  sh """
  curl -X POST \
  -H 'Authorization: token $PASSWORD' \
- 'https://api.github.com/repos/$USERNAME/do400-greetingdevsecops/issues' \
+ 'https://api.github.com/repos/$USERNAME/do400-greeting-devsecops/issues' \
  -d '{"title": "CI build $BUILD_NUMBER", "body": "Pipeline
  build $BUILD_NUMBER has failed"}'
  """
